@@ -1,0 +1,10 @@
+<style>
+  html,body {
+      padding: 0;
+      margin: 0;
+  }
+</style>
+<webview id="youtube-shell" class="yt-webview" src="https://youtube.com/" style="width: 100%; height: 100%;" preload="./preload/app.preload" disablewebsecurity></webview>
+<script type="text/javascript">
+  require('./renderers/app.renderer')
+</script>
